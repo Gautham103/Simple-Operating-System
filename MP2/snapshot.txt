@@ -1,0 +1,25 @@
+žlloc_to_go = 21
+alloc_to_go = 20
+alloc_to_go = 19
+alloc_to_go = 18
+alloc_to_go = 17
+alloc_to_go = 16
+alloc_to_go = 15
+alloc_to_go = 14
+alloc_to_go = 13
+alloc_to_go = 12
+alloc_to_go = 11
+alloc_to_go = 10
+alloc_to_go = 9
+alloc_to_go = 8
+alloc_to_go = 7
+alloc_to_go = 6
+alloc_to_go = 5
+alloc_to_go = 4
+alloc_to_go = 3
+alloc_to_go = 2
+alloc_to_go = 1
+alloc_to_go = 0
+MEMORY TEST FAILED. ERROR IN FRAME POOL
+i =0   v = 1   n =2
+

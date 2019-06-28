@@ -1,0 +1,381 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BLACK	console.H	/^   BLACK         = 0,$/;"	e	enum:__anon1
+BLUE	console.H	/^   BLUE          = 1,$/;"	e	enum:__anon1
+BROWN	console.H	/^   BROWN         = 6,$/;"	e	enum:__anon1
+COLOR_CODE	console.H	/^} COLOR_CODE;$/;"	t	typeref:enum:__anon1
+CONSOLE_START_ADDRESS	console.C	15;"	d	file:
+CPP	makefile	/^CPP = gcc$/;"	m
+CPP_OPTIONS	makefile	/^CPP_OPTIONS = -m32 -nostdlib -fno-builtin -nostartfiles -nodefaultlibs -fno-exceptions -fno-rtti -fno-stack-protector -fleading-underscore -fno-asynchronous-unwind-tables$/;"	m
+CYAN	console.H	/^   CYAN          = 3, $/;"	e	enum:__anon1
+Console	console.H	/^class Console {$/;"	c
+CurrentThread	thread.C	/^Thread * Thread::CurrentThread() {$/;"	f	class:Thread
+DARK_GREY	console.H	/^   DARK_GREY     = 8,  	$/;"	e	enum:__anon1
+DATA_PORT	simple_keyboard.H	/^  static const unsigned short DATA_PORT   = 0x60;$/;"	m	class:SimpleKeyboard
+EXCEPTION_TABLE_SIZE	exceptions.H	/^  const static int EXCEPTION_TABLE_SIZE = 32;$/;"	m	class:ExceptionHandler
+ExceptionHandler	exceptions.H	/^class ExceptionHandler {$/;"	c
+FramePool	frame_pool.C	/^FramePool::FramePool() {$/;"	f	class:FramePool
+FramePool	frame_pool.H	/^class FramePool {$/;"	c
+GDT	gdt.H	/^class GDT {$/;"	c
+GREEN	console.H	/^   GREEN         = 2,$/;"	e	enum:__anon1
+IDT	idt.H	/^class IDT {$/;"	c
+INTERRUPT_STATE_SIZE	threads_low.asm	/^INTERRUPT_STATE_SIZE equ 68 ; size of exception frame on stack$/;"	d
+IRQ	irq.H	/^class IRQ {$/;"	c
+IRQ_BASE	interrupts.H	/^  const static int IRQ_BASE       = 32;$/;"	m	class:InterruptHandler
+IRQ_BASE	irq.C	17;"	d	file:
+IRQ_TABLE_SIZE	interrupts.H	/^  const static int IRQ_TABLE_SIZE = 16;$/;"	m	class:InterruptHandler
+InterruptHandler	interrupts.H	/^class InterruptHandler {$/;"	c
+KERNEL_CS	machine.H	/^  static const unsigned int KERNEL_CS = 0x08;$/;"	m	class:Machine
+KERNEL_CS	threads_low.asm	/^KERNEL_CS equ 1<<3	; kernel code segment is GDT entry 1$/;"	d
+KERNEL_DS	machine.H	/^  static const unsigned int KERNEL_DS = 0x10;$/;"	m	class:Machine
+KERNEL_DS	threads_low.asm	/^KERNEL_DS equ 2<<3	; kernel data segment is GDT entry 2$/;"	d
+LIGHT_BLUE	console.H	/^   LIGHT_BLUE    = 9, 	$/;"	e	enum:__anon1
+LIGHT_BROWN	console.H	/^   LIGHT_BROWN   = 14, 	$/;"	e	enum:__anon1
+LIGHT_CYAN	console.H	/^   LIGHT_CYAN    = 11, 	$/;"	e	enum:__anon1
+LIGHT_GREEN	console.H	/^   LIGHT_GREEN   = 10, 	$/;"	e	enum:__anon1
+LIGHT_GREY	console.H	/^   LIGHT_GREY    = 7,$/;"	e	enum:__anon1
+LIGHT_MAGENTA	console.H	/^   LIGHT_MAGENTA = 13, 	$/;"	e	enum:__anon1
+LIGHT_RED	console.H	/^   LIGHT_RED     = 12, 	$/;"	e	enum:__anon1
+MAGENTA	console.H	/^   MAGENTA       = 5,$/;"	e	enum:__anon1
+MEMORY_POOL	kernel.C	/^MemPool * MEMORY_POOL;$/;"	v
+MULTIBOOT_AOUT_KLUDGE	start.asm	/^    MULTIBOOT_AOUT_KLUDGE	equ 1<<16$/;"	d
+MULTIBOOT_CHECKSUM	start.asm	/^    MULTIBOOT_CHECKSUM	equ -(MULTIBOOT_HEADER_MAGIC + MULTIBOOT_HEADER_FLAGS)$/;"	d
+MULTIBOOT_HEADER_FLAGS	start.asm	/^    MULTIBOOT_HEADER_FLAGS	equ MULTIBOOT_PAGE_ALIGN | MULTIBOOT_MEMORY_INFO | MULTIBOOT_AOUT_KLUDGE$/;"	d
+MULTIBOOT_HEADER_MAGIC	start.asm	/^    MULTIBOOT_HEADER_MAGIC	equ 0x1BADB002$/;"	d
+MULTIBOOT_MEMORY_INFO	start.asm	/^    MULTIBOOT_MEMORY_INFO	equ 1<<1$/;"	d
+MULTIBOOT_PAGE_ALIGN	start.asm	/^    MULTIBOOT_PAGE_ALIGN	equ 1<<0$/;"	d
+Machine	machine.H	/^class Machine {$/;"	c
+MemPool	mem_pool.C	/^MemPool::MemPool(FramePool * _frame_pool, int _n_frames) {$/;"	f	class:MemPool
+MemPool	mem_pool.H	/^class MemPool { \/* Contiguous-Memory Pool *\/$/;"	c
+NULL	utils.H	20;"	d
+PAGE_SIZE	machine.H	/^  static const unsigned int PAGE_SIZE = 4096;$/;"	m	class:Machine
+PT_ENTRIES_PER_PAGE	machine.H	/^  static const unsigned int PT_ENTRIES_PER_PAGE = 1024;$/;"	m	class:Machine
+RED	console.H	/^   RED	         = 4,$/;"	e	enum:__anon1
+REGS	machine.H	/^} REGS;$/;"	t	typeref:struct:regs
+SCHEDULER_H	scheduler.H	10;"	d
+SECTION	start.asm	/^SECTION .bss$/;"	l
+SIZE	gdt.H	/^  static const unsigned int SIZE = 3;$/;"	m	class:GDT
+SIZE	idt.H	/^  static const int SIZE = 256;$/;"	m	class:IDT
+STATUS_PORT	simple_keyboard.H	/^  static const unsigned short STATUS_PORT = 0x64;$/;"	m	class:SimpleKeyboard
+SYSTEM_FRAME_POOL	kernel.C	/^FramePool * SYSTEM_FRAME_POOL;$/;"	v
+SYSTEM_SCHEDULER	kernel.C	/^Scheduler * SYSTEM_SCHEDULER;$/;"	v
+Scheduler	scheduler.C	/^Scheduler::Scheduler()$/;"	f	class:Scheduler
+Scheduler	scheduler.H	/^class Scheduler {$/;"	c
+SimpleKeyboard	simple_keyboard.C	/^SimpleKeyboard::SimpleKeyboard() {$/;"	f	class:SimpleKeyboard
+SimpleKeyboard	simple_keyboard.H	/^class SimpleKeyboard : public InterruptHandler {$/;"	c
+SimpleTimer	simple_timer.C	/^SimpleTimer::SimpleTimer(int _hz) {$/;"	f	class:SimpleTimer
+SimpleTimer	simple_timer.H	/^class SimpleTimer : public InterruptHandler {$/;"	c
+Thread	thread.C	/^Thread::Thread(Thread_Function _tf, char * _stack, unsigned int _stack_size) {$/;"	f	class:Thread
+Thread	thread.H	/^class Thread {$/;"	c
+ThreadId	thread.C	/^int Thread::ThreadId() {$/;"	f	class:Thread
+Thread_Function	thread.H	/^typedef void (*Thread_Function)();$/;"	t
+WHITE	console.H	/^   WHITE	     = 15 	$/;"	e	enum:__anon1
+_Console_H_	console.H	25;"	d
+_FRAME_POOL_H_	frame_pool.H	15;"	d
+_GDT_H_	gdt.H	23;"	d
+_IDT_H_	idt.H	23;"	d
+_IRQ_H_	irq.H	18;"	d
+_MEM_POOL_H_	mem_pool.H	18;"	d
+_SIMPLE_KEYBOARD_H_	simple_keyboard.H	15;"	d
+_SIMPLE_TIMER_H_	simple_timer.H	17;"	d
+__assert_H__	assert.H	16;"	d
+_assert	assert.C	/^void _assert (const char* _file, const int _line, const char* _message )  {$/;"	f
+_exceptions_H_	exceptions.H	26;"	d
+_gdt_flush	gdt_low.asm	/^_gdt_flush:$/;"	l
+_get_EFLAGS	machine_low.asm	/^_get_EFLAGS:$/;"	l
+_idt_load	idt_low.asm	/^_idt_load:$/;"	l
+_interrupts_H_	interrupts.H	24;"	d
+_irq0	irq_low.asm	/^_irq0:$/;"	l
+_irq1	irq_low.asm	/^_irq1:$/;"	l
+_irq10	irq_low.asm	/^_irq10:$/;"	l
+_irq11	irq_low.asm	/^_irq11:$/;"	l
+_irq12	irq_low.asm	/^_irq12:$/;"	l
+_irq13	irq_low.asm	/^_irq13:$/;"	l
+_irq14	irq_low.asm	/^_irq14:$/;"	l
+_irq15	irq_low.asm	/^_irq15:$/;"	l
+_irq2	irq_low.asm	/^_irq2:$/;"	l
+_irq3	irq_low.asm	/^_irq3:$/;"	l
+_irq4	irq_low.asm	/^_irq4:$/;"	l
+_irq5	irq_low.asm	/^_irq5:$/;"	l
+_irq6	irq_low.asm	/^_irq6:$/;"	l
+_irq7	irq_low.asm	/^_irq7:$/;"	l
+_irq8	irq_low.asm	/^_irq8:$/;"	l
+_irq9	irq_low.asm	/^_irq9:$/;"	l
+_isr0	idt_low.asm	/^_isr0:$/;"	l
+_isr1	idt_low.asm	/^_isr1:$/;"	l
+_isr10	idt_low.asm	/^_isr10:$/;"	l
+_isr11	idt_low.asm	/^_isr11:$/;"	l
+_isr12	idt_low.asm	/^_isr12:$/;"	l
+_isr13	idt_low.asm	/^_isr13:$/;"	l
+_isr14	idt_low.asm	/^_isr14:$/;"	l
+_isr15	idt_low.asm	/^_isr15:$/;"	l
+_isr16	idt_low.asm	/^_isr16:$/;"	l
+_isr17	idt_low.asm	/^_isr17:$/;"	l
+_isr18	idt_low.asm	/^_isr18:$/;"	l
+_isr19	idt_low.asm	/^_isr19:$/;"	l
+_isr2	idt_low.asm	/^_isr2:$/;"	l
+_isr20	idt_low.asm	/^_isr20:$/;"	l
+_isr21	idt_low.asm	/^_isr21:$/;"	l
+_isr22	idt_low.asm	/^_isr22:$/;"	l
+_isr23	idt_low.asm	/^_isr23:$/;"	l
+_isr24	idt_low.asm	/^_isr24:$/;"	l
+_isr25	idt_low.asm	/^_isr25:$/;"	l
+_isr26	idt_low.asm	/^_isr26:$/;"	l
+_isr27	idt_low.asm	/^_isr27:$/;"	l
+_isr28	idt_low.asm	/^_isr28:$/;"	l
+_isr29	idt_low.asm	/^_isr29:$/;"	l
+_isr3	idt_low.asm	/^_isr3:$/;"	l
+_isr30	idt_low.asm	/^_isr30:$/;"	l
+_isr31	idt_low.asm	/^_isr31:$/;"	l
+_isr4	idt_low.asm	/^_isr4:$/;"	l
+_isr5	idt_low.asm	/^_isr5:$/;"	l
+_isr6	idt_low.asm	/^_isr6:$/;"	l
+_isr7	idt_low.asm	/^_isr7:$/;"	l
+_isr8	idt_low.asm	/^_isr8:$/;"	l
+_isr9	idt_low.asm	/^_isr9:$/;"	l
+_machine_H_	machine.H	18;"	d
+_machine_low_H_	machine_low.H	15;"	d
+_sys_stack	start.asm	/^_sys_stack:$/;"	l
+_thread_H_	thread.H	18;"	d
+_threads_low_H_	threads_low.H	15;"	d
+_threads_low_switch_to	threads_low.asm	/^_threads_low_switch_to:$/;"	l
+_utils_h_	utils.H	13;"	d
+abort	utils.C	/^void abort() {$/;"	f
+access	gdt.C	/^  unsigned char  access;$/;"	m	struct:gdt_entry	file:
+add	scheduler.C	/^void Scheduler::add(Thread * _thread) {$/;"	f	class:Scheduler
+allocate	mem_pool.C	/^unsigned long MemPool::allocate(unsigned long _size) {$/;"	f	class:MemPool
+always0	idt.C	/^    unsigned char always0;$/;"	m	struct:idt_entry	file:
+assert	assert.H	44;"	d
+assert	assert.H	50;"	d
+assert	assert.H	52;"	d
+attrib	console.C	/^ int Console::attrib;                  \/* background and foreground color *\/$/;"	m	class:Console	file:
+attrib	console.H	/^  static int attrib;                  \/* background and foreground color *\/$/;"	m	class:Console
+base	gdt.C	/^  unsigned int   base;$/;"	m	struct:gdt_ptr	file:
+base	idt.C	/^    unsigned int base;$/;"	m	struct:idt_ptr	file:
+base_hi	idt.C	/^    unsigned short base_hi;$/;"	m	struct:idt_entry	file:
+base_high	gdt.C	/^  unsigned char  base_high;$/;"	m	struct:gdt_entry	file:
+base_lo	idt.C	/^    unsigned short base_lo;$/;"	m	struct:idt_entry	file:
+base_low	gdt.C	/^  unsigned short base_low;$/;"	m	struct:gdt_entry	file:
+base_middle	gdt.C	/^  unsigned char  base_middle;$/;"	m	struct:gdt_entry	file:
+cargo	thread.H	/^    char     * cargo;       \/* pointer to additional data that $/;"	m	class:Thread
+cls	console.C	/^void Console::cls() {$/;"	f	class:Console
+cs	machine.H	/^    unsigned int cs;$/;"	m	struct:regs
+csr_x	console.C	/^ int Console::csr_x;                   \/* position of cursor              *\/$/;"	m	class:Console	file:
+csr_x	console.H	/^  static int csr_x;                   \/* position of cursor              *\/$/;"	m	class:Console
+csr_y	console.C	/^ int Console::csr_y;$/;"	m	class:Console	file:
+csr_y	console.H	/^  static int csr_y;$/;"	m	class:Console
+current	simple_timer.C	/^void SimpleTimer::current(unsigned long * _seconds, int * _ticks) {$/;"	f	class:SimpleTimer
+current_thread	thread.C	/^Thread * current_thread = 0;$/;"	v
+deregister_handler	exceptions.C	/^void ExceptionHandler::deregister_handler(unsigned int    _isr_code) {$/;"	f	class:ExceptionHandler
+deregister_handler	interrupts.C	/^void InterruptHandler::deregister_handler(unsigned int _irq_code) {$/;"	f	class:InterruptHandler
+disable_interrupts	machine.C	/^void Machine::disable_interrupts() {$/;"	f	class:Machine
+dispatch_exception	exceptions.C	/^void ExceptionHandler::dispatch_exception(REGS * _r) {$/;"	f	class:ExceptionHandler
+dispatch_interrupt	interrupts.C	/^void InterruptHandler::dispatch_interrupt(REGS * _r) {$/;"	f	class:InterruptHandler
+dispatch_to	thread.C	/^void Thread::dispatch_to(Thread * _thread) {$/;"	f	class:Thread
+ds	machine.H	/^    unsigned int ds;$/;"	m	struct:regs
+eax	machine.H	/^    unsigned int eax;$/;"	m	struct:regs
+ebp	machine.H	/^    unsigned int ebp;$/;"	m	struct:regs
+ebx	machine.H	/^    unsigned int ebx;$/;"	m	struct:regs
+ecx	machine.H	/^    unsigned int ecx;$/;"	m	struct:regs
+edi	machine.H	/^    unsigned int edi;$/;"	m	struct:regs
+edx	machine.H	/^    unsigned int edx;$/;"	m	struct:regs
+eflags	machine.H	/^    unsigned int eflags;$/;"	m	struct:regs
+eip	machine.H	/^    unsigned int eip;$/;"	m	struct:regs
+enable_interrupts	machine.C	/^void Machine::enable_interrupts() {$/;"	f	class:Machine
+err_code	machine.H	/^    unsigned int err_code;$/;"	m	struct:regs
+es	machine.H	/^    unsigned int es;$/;"	m	struct:regs
+esi	machine.H	/^    unsigned int esi;$/;"	m	struct:regs
+esp	machine.H	/^    unsigned int esp;$/;"	m	struct:regs
+esp	thread.H	/^    char     * esp;         \/* The current stack pointer for the thread.*\/$/;"	m	class:Thread
+extern	gdt_low.asm	/^extern _gp		; Says that '_gp' is in another file$/;"	l
+extern	idt_low.asm	/^extern _idtp$/;"	l
+extern	idt_low.asm	/^extern _lowlevel_dispatch_exception$/;"	l
+extern	idt_low.asm	/^extern _promptA$/;"	l
+extern	idt_low.asm	/^extern _promptB$/;"	l
+extern	idt_low.asm	/^extern _promptC$/;"	l
+extern	irq_low.asm	/^extern _lowlevel_dispatch_interrupt$/;"	l
+extern	threads_low.asm	/^extern _current_thread  ; defined and initialized in threads.c$/;"	l
+flags	idt.C	/^    unsigned char flags;$/;"	m	struct:idt_entry	file:
+flush2	gdt_low.asm	/^flush2:$/;"	l
+fs	machine.H	/^    unsigned int fs;$/;"	m	struct:regs
+fun1	kernel.C	/^void fun1() {$/;"	f
+fun2	kernel.C	/^void fun2() {$/;"	f
+fun3	kernel.C	/^void fun3() {$/;"	f
+fun4	kernel.C	/^void fun4() {$/;"	f
+gdt	gdt.C	/^static struct gdt_entry gdt[GDT::SIZE];$/;"	v	typeref:struct:gdt_entry	file:
+gdt_entry	gdt.C	/^struct gdt_entry {$/;"	s	file:
+gdt_ptr	gdt.C	/^struct gdt_ptr {$/;"	s	file:
+generated_by_slave_PIC	interrupts.C	/^bool InterruptHandler::generated_by_slave_PIC(unsigned int int_no) {$/;"	f	class:InterruptHandler
+get_frame	frame_pool.C	/^unsigned long FramePool::get_frame() {$/;"	f	class:FramePool
+global	gdt_low.asm	/^global _gdt_flush	; Allows the C code to link to this.$/;"	l
+global	idt_low.asm	/^global _idt_load$/;"	l
+global	idt_low.asm	/^global _isr0$/;"	l
+global	idt_low.asm	/^global _isr1$/;"	l
+global	idt_low.asm	/^global _isr10$/;"	l
+global	idt_low.asm	/^global _isr11$/;"	l
+global	idt_low.asm	/^global _isr12$/;"	l
+global	idt_low.asm	/^global _isr13$/;"	l
+global	idt_low.asm	/^global _isr14$/;"	l
+global	idt_low.asm	/^global _isr15$/;"	l
+global	idt_low.asm	/^global _isr16$/;"	l
+global	idt_low.asm	/^global _isr17$/;"	l
+global	idt_low.asm	/^global _isr18$/;"	l
+global	idt_low.asm	/^global _isr19$/;"	l
+global	idt_low.asm	/^global _isr2$/;"	l
+global	idt_low.asm	/^global _isr20$/;"	l
+global	idt_low.asm	/^global _isr21$/;"	l
+global	idt_low.asm	/^global _isr22$/;"	l
+global	idt_low.asm	/^global _isr23$/;"	l
+global	idt_low.asm	/^global _isr24$/;"	l
+global	idt_low.asm	/^global _isr25$/;"	l
+global	idt_low.asm	/^global _isr26$/;"	l
+global	idt_low.asm	/^global _isr27$/;"	l
+global	idt_low.asm	/^global _isr28$/;"	l
+global	idt_low.asm	/^global _isr29$/;"	l
+global	idt_low.asm	/^global _isr3$/;"	l
+global	idt_low.asm	/^global _isr30$/;"	l
+global	idt_low.asm	/^global _isr31$/;"	l
+global	idt_low.asm	/^global _isr4$/;"	l
+global	idt_low.asm	/^global _isr5$/;"	l
+global	idt_low.asm	/^global _isr6$/;"	l
+global	idt_low.asm	/^global _isr7$/;"	l
+global	idt_low.asm	/^global _isr8$/;"	l
+global	idt_low.asm	/^global _isr9$/;"	l
+global	irq_low.asm	/^global _irq0$/;"	l
+global	irq_low.asm	/^global _irq1$/;"	l
+global	irq_low.asm	/^global _irq10$/;"	l
+global	irq_low.asm	/^global _irq11$/;"	l
+global	irq_low.asm	/^global _irq12$/;"	l
+global	irq_low.asm	/^global _irq13$/;"	l
+global	irq_low.asm	/^global _irq14$/;"	l
+global	irq_low.asm	/^global _irq15$/;"	l
+global	irq_low.asm	/^global _irq2$/;"	l
+global	irq_low.asm	/^global _irq3$/;"	l
+global	irq_low.asm	/^global _irq4$/;"	l
+global	irq_low.asm	/^global _irq5$/;"	l
+global	irq_low.asm	/^global _irq6$/;"	l
+global	irq_low.asm	/^global _irq7$/;"	l
+global	irq_low.asm	/^global _irq8$/;"	l
+global	irq_low.asm	/^global _irq9$/;"	l
+global	machine_low.asm	/^global _get_EFLAGS$/;"	l
+global	start.asm	/^global start$/;"	l
+global	threads_low.asm	/^global _threads_low_switch_to$/;"	l
+gp	gdt.C	/^struct gdt_ptr gp;$/;"	v	typeref:struct:gdt_ptr
+granularity	gdt.C	/^  unsigned char  granularity;$/;"	m	struct:gdt_entry	file:
+gs	machine.H	/^    unsigned int gs;$/;"	m	struct:regs
+handle_exception	exceptions.H	/^  virtual void handle_exception(REGS * _regs) {$/;"	f	class:ExceptionHandler
+handle_interrupt	interrupts.H	/^  virtual void handle_interrupt(REGS * _regs) {$/;"	f	class:InterruptHandler
+handle_interrupt	simple_keyboard.C	/^void SimpleKeyboard::handle_interrupt(REGS *_r) {$/;"	f	class:SimpleKeyboard
+handle_interrupt	simple_timer.C	/^void SimpleTimer::handle_interrupt(REGS *_r) {$/;"	f	class:SimpleTimer
+handler_table	exceptions.C	/^ExceptionHandler * ExceptionHandler::handler_table[ExceptionHandler::EXCEPTION_TABLE_SIZE];$/;"	m	class:ExceptionHandler	file:
+handler_table	exceptions.H	/^  static ExceptionHandler * handler_table[EXCEPTION_TABLE_SIZE];$/;"	m	class:ExceptionHandler
+handler_table	interrupts.C	/^InterruptHandler * InterruptHandler::handler_table[InterruptHandler::IRQ_TABLE_SIZE];$/;"	m	class:InterruptHandler	file:
+handler_table	interrupts.H	/^  static InterruptHandler * handler_table[IRQ_TABLE_SIZE];$/;"	m	class:InterruptHandler
+head_queue	scheduler.H	/^    ready_queue * head_queue;$/;"	m	class:Scheduler
+hz	simple_timer.H	/^  int hz;                \/* Actually, by defaults it is 18.22Hz.$/;"	m	class:SimpleTimer
+idt	idt.C	/^struct idt_entry idt[IDT::SIZE];$/;"	v	typeref:struct:idt_entry
+idt_entry	idt.C	/^struct idt_entry$/;"	s	file:
+idt_ptr	idt.C	/^struct idt_ptr$/;"	s	file:
+idtp	idt.C	/^struct idt_ptr idtp;$/;"	v	typeref:struct:idt_ptr
+init	console.C	/^void Console::init(unsigned char _fore_color,$/;"	f	class:Console
+init	gdt.C	/^void GDT::init() {$/;"	f	class:GDT
+init	idt.C	/^void IDT::init() {$/;"	f	class:IDT
+init	irq.C	/^void IRQ::init() {$/;"	f	class:IRQ
+init	simple_keyboard.C	/^void SimpleKeyboard::init() {$/;"	f	class:SimpleKeyboard
+init_dispatcher	exceptions.C	/^void ExceptionHandler::init_dispatcher() {$/;"	f	class:ExceptionHandler
+init_dispatcher	interrupts.C	/^void InterruptHandler::init_dispatcher() {$/;"	f	class:InterruptHandler
+inportb	machine.C	/^char Machine::inportb (unsigned short _port) {$/;"	f	class:Machine
+inportw	machine.C	/^unsigned short Machine::inportw (unsigned short _port) {$/;"	f	class:Machine
+int2str	utils.C	/^void int2str(int _num, char * _str) {$/;"	f
+int_no	machine.H	/^    unsigned int int_no;$/;"	m	struct:regs
+interrupts_enabled	machine.C	/^bool Machine::interrupts_enabled() {$/;"	f	class:Machine
+irq_common_stub	irq_low.asm	/^irq_common_stub:$/;"	l
+irq_remap	irq.C	/^static void irq_remap()$/;"	f	file:
+isr_common_stub	idt_low.asm	/^isr_common_stub:$/;"	l
+kb	simple_keyboard.C	/^SimpleKeyboard SimpleKeyboard::kb;$/;"	m	class:SimpleKeyboard	file:
+kb	simple_keyboard.H	/^  static SimpleKeyboard kb;    $/;"	m	class:SimpleKeyboard
+key_code	simple_keyboard.H	/^  char key_code;$/;"	m	class:SimpleKeyboard
+key_pressed	simple_keyboard.H	/^  bool key_pressed;$/;"	m	class:SimpleKeyboard
+limit	gdt.C	/^  unsigned short limit;$/;"	m	struct:gdt_ptr	file:
+limit	idt.C	/^    unsigned short limit;$/;"	m	struct:idt_ptr	file:
+limit_low	gdt.C	/^  unsigned short limit_low;$/;"	m	struct:gdt_entry	file:
+lowlevel_dispatch_exception	exceptions.C	/^extern "C" void lowlevel_dispatch_exception(REGS * _r) {$/;"	f
+lowlevel_dispatch_interrupt	interrupts.C	/^extern "C" void lowlevel_dispatch_interrupt(REGS * _r) {$/;"	f
+main	kernel.C	/^int main() {$/;"	f
+mboot	start.asm	/^mboot:$/;"	l
+memcpy	utils.C	/^void *memcpy(void *dest, const void *src, int count)$/;"	f
+memset	utils.C	/^void *memset(void *dest, char val, int count)$/;"	f
+memsetw	utils.C	/^unsigned short *memsetw(unsigned short *dest, unsigned short val, int count)$/;"	f
+move_cursor	console.C	/^void Console::move_cursor() {$/;"	f	class:Console
+next	scheduler.H	/^        ready_queue * next;$/;"	m	struct:Scheduler::__anon2
+nextFreePid	thread.C	/^int Thread::nextFreePid;$/;"	m	class:Thread	file:
+nextFreePid	thread.H	/^    static int nextFreePid; \/* Used to assign unique id's to threads. *\/$/;"	m	class:Thread
+next_free_frame	frame_pool.C	/^static unsigned long next_free_frame;$/;"	v	file:
+operator delete	kernel.C	/^void operator delete (void * p) {$/;"	f
+operator delete[]	kernel.C	/^void operator delete[] (void * p) {$/;"	f
+operator new	kernel.C	/^void * operator new (size_t size) {$/;"	f
+operator new[]	kernel.C	/^void * operator new[] (size_t size) {$/;"	f
+outportb	machine.C	/^void Machine::outportb (unsigned short _port, char _data) {$/;"	f	class:Machine
+outportw	machine.C	/^void Machine::outportw (unsigned short _port, unsigned short _data) {$/;"	f	class:Machine
+pass_on_CPU	kernel.C	/^void pass_on_CPU(Thread * _to_thread) {$/;"	f
+pop	idt_low.asm	/^    pop ds$/;"	d
+pop	irq_low.asm	/^    pop ds$/;"	d
+pop	threads_low.asm	/^	pop	ds$/;"	d
+priority	thread.H	/^    int        priority;    \/* Maybe the scheduler wants to use priorities. *\/$/;"	m	class:Thread
+push	idt_low.asm	/^    push ds$/;"	d
+push	irq_low.asm	/^    push ds$/;"	d
+push	thread.C	/^inline void Thread::push(unsigned long _val) {$/;"	f	class:Thread
+push	threads_low.asm	/^	push	ds$/;"	d
+putch	console.C	/^void Console::putch(const char _c){$/;"	f	class:Console
+puti	console.C	/^void Console::puti(const int _n) {$/;"	f	class:Console
+puts	console.C	/^void Console::puts(const char * _s) {$/;"	f	class:Console
+putui	console.C	/^void Console::putui(const unsigned int _n) {$/;"	f	class:Console
+read	simple_keyboard.C	/^char SimpleKeyboard::read() {$/;"	f	class:SimpleKeyboard
+ready_queue	scheduler.H	/^    }ready_queue;$/;"	t	class:Scheduler	typeref:struct:Scheduler::__anon2
+register_handler	exceptions.C	/^void ExceptionHandler::register_handler(unsigned int       _isr_code,$/;"	f	class:ExceptionHandler
+register_handler	interrupts.C	/^void InterruptHandler::register_handler(unsigned int        _irq_code,$/;"	f	class:InterruptHandler
+regs	machine.H	/^typedef struct regs {$/;"	s
+release	mem_pool.C	/^void MemPool::release(unsigned long   _start_address) {$/;"	f	class:MemPool
+release_frame	frame_pool.C	/^void FramePool::release_frame(unsigned long   _frame_address) {$/;"	f	class:FramePool
+resume	scheduler.C	/^void Scheduler::resume(Thread * _thread) $/;"	f	class:Scheduler
+scroll	console.C	/^void Console::scroll() {$/;"	f	class:Console
+seconds	simple_timer.H	/^  unsigned long seconds; $/;"	m	class:SimpleTimer
+sel	idt.C	/^    unsigned short sel;$/;"	m	struct:idt_entry	file:
+set_TextColor	console.C	/^void Console::set_TextColor(const unsigned char _forecolor, $/;"	f	class:Console
+set_frequency	simple_timer.C	/^void SimpleTimer::set_frequency(int _hz) {$/;"	f	class:SimpleTimer
+set_gate	gdt.C	/^void GDT::set_gate(int num, $/;"	f	class:GDT
+set_gate	idt.C	/^void IDT::set_gate(unsigned char num, unsigned long base, $/;"	f	class:IDT
+setup_context	thread.C	/^void Thread::setup_context(Thread_Function _tfunction){$/;"	f	class:Thread
+size_t	kernel.C	/^typedef unsigned int size_t;$/;"	t	file:
+ss	machine.H	/^    unsigned int ss;    $/;"	m	struct:regs
+stack	thread.H	/^    char     * stack;       \/* pointer to the stack of the thread.*\/$/;"	m	class:Thread
+stack_size	thread.H	/^    unsigned int stack_size;\/* size of the stack (in byte) *\/$/;"	m	class:Thread
+start	start.asm	/^start:$/;"	l
+start_address	mem_pool.H	/^   unsigned long start_address;$/;"	m	class:MemPool
+static_ctors_loop	start.asm	/^static_ctors_loop:$/;"	l
+static_dtors_loop	start.asm	/^static_dtors_loop:$/;"	l
+strcpy	utils.C	/^void strcpy(char* _dst, char* _src) {$/;"	f
+strlen	utils.C	/^int strlen(const char *_str) {$/;"	f
+stublet	start.asm	/^stublet:$/;"	l
+tail_queue	scheduler.H	/^    ready_queue * tail_queue;$/;"	m	class:Scheduler
+terminate	scheduler.C	/^void Scheduler::terminate(Thread * _thread) {$/;"	f	class:Scheduler
+textmemptr	console.C	/^ unsigned short * Console::textmemptr; \/* text pointer *\/$/;"	m	class:Console	file:
+textmemptr	console.H	/^  static unsigned short * textmemptr; \/* text pointer *\/$/;"	m	class:Console
+thread1	kernel.C	/^Thread * thread1;$/;"	v
+thread2	kernel.C	/^Thread * thread2;$/;"	v
+thread3	kernel.C	/^Thread * thread3;$/;"	v
+thread4	kernel.C	/^Thread * thread4;$/;"	v
+thread_id	scheduler.H	/^        Thread * thread_id;$/;"	m	struct:Scheduler::__anon2
+thread_id	thread.H	/^    int        thread_id;   \/* thread identifier. Assigned upon creation. *\/$/;"	m	class:Thread
+thread_shutdown	thread.C	/^static void thread_shutdown() {$/;"	f	file:
+thread_start	thread.C	/^static void thread_start() {$/;"	f	file:
+ticks	simple_timer.H	/^  int           ticks;   \/* ticks since last "seconds" update.    *\/$/;"	m	class:SimpleTimer
+uint2str	utils.C	/^void uint2str(unsigned int _num, char * _str) {$/;"	f
+useresp	machine.H	/^    unsigned int useresp;$/;"	m	struct:regs
+wait	simple_keyboard.C	/^void SimpleKeyboard::wait() {$/;"	f	class:SimpleKeyboard
+wait	simple_timer.C	/^void SimpleTimer::wait(unsigned long _seconds) {$/;"	f	class:SimpleTimer
+yield	scheduler.C	/^void Scheduler::yield() $/;"	f	class:Scheduler

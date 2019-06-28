@@ -1,0 +1,12 @@
+GDB Integration with kernal image
+
+I have followed the following steps to integrate GDB to debug the kernal image.
+
+1. Include -g option in the makefile to generate the debugging information.
+2. Removed OUTPUT_FORMAT("binary") from linker.ld file which is used for stripping the debugging information.
+3. Compiled the code.
+4. Copied using the copykernel.sh script.
+5. Execute the kernal image in the bosh environment which later waits for gdb connection.
+6. Ran gdb with the kernal ELF file in a separate terminal and connected to the bosh environment using the local host ip 127.0.0.1.
+7. Setted a break point of the code from which we can start debugging.
+8. Ran the gdb with continue command.
